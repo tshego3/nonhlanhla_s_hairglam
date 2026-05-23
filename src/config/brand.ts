@@ -8,14 +8,11 @@ import type { BrandConfig } from "../types";
 export const brand: BrandConfig = {
   name: "Nonhlanhla's HairGlam",
   tagline: "Professional Weave Installations & Care",
-  // TODO: replace with real phone number before launch
-  phone: "+27 XX XXX XXXX",
+  phone: "+27 65 967 8914",
   email: "hello@nonhlanlashairglam.co.za",
-  location: "Johannesburg, South Africa",
+  location: "Mpumalanga, South Africa",
   socialLinks: [
-    // TODO: replace with real social media URLs before launch
-    { platform: "Instagram", url: "https://instagram.com/" },
-    { platform: "Facebook", url: "https://facebook.com/" },
+    { platform: "Instagram", url: "https://www.instagram.com/nonhlanhlas_hairglam/" },
   ],
   hours: "Mon - Sat: 8:00 AM - 6:00 PM",
   logo: "/logo.png",
