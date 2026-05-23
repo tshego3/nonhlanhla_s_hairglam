@@ -26,7 +26,7 @@ export function Hero() {
       </Box>
       <Box style={hero.imageWrapper(!!isMobile)}>
         <img
-          src="/gallery/previous_work_4.jpeg"
+          src={`${import.meta.env.BASE_URL}gallery/previous_work_4.jpeg`}
           alt="Featured hairstyling work"
           style={hero.image}
         />

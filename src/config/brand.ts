@@ -15,7 +15,7 @@ export const brand: BrandConfig = {
     { platform: "Instagram", url: "https://www.instagram.com/nonhlanhlas_hairglam/" },
   ],
   hours: "Mon - Sat: 8:00 AM - 6:00 PM",
-  logo: "/logo.png",
+  logo: `${import.meta.env.BASE_URL}logo.png`,
   colors: {
     primary: "#FFFFFF",
     secondary: "#DCAE96",

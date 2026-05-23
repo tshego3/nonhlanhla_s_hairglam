@@ -131,9 +131,20 @@ npx gh-pages -d dist
 
 Then in GitHub repo Settings > Pages, set source to `gh-pages` branch.
 
+**Important:** The site is served from `/nonhlanhla_s_hairglam/`, so `vite.config.ts` must have `base: "/nonhlanhla_s_hairglam/"`. Vite only rewrites paths in HTML at build time — runtime asset paths in JS/TS must use `import.meta.env.BASE_URL`:
+
+```ts
+// Correct
+logo: `${import.meta.env.BASE_URL}logo.png`
+src: `${import.meta.env.BASE_URL}gallery/image.jpeg`
+
+// Incorrect — will 404 on GitHub Pages
+logo: "/logo.png"
+```
+
 ### Other Static Hosts
 
-Upload the `dist/` folder to any static file server (Netlify, Vercel static, Cloudflare Pages, etc.).
+Upload the `dist/` folder to any static file server (Netlify, Vercel static, Cloudflare Pages, etc.). If the host serves from root, change `base` to `"/"` and remove the `import.meta.env.BASE_URL` prefixes.
 
 ## Compliance Checklist
 

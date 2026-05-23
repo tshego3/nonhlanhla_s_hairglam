@@ -163,6 +163,16 @@ npm run build
 
 The `dist/` folder is ready for any static hosting provider.
 
+### GitHub Pages
+
+The site is served from `https://<user>.github.io/nonhlanhla_s_hairglam/`, so `vite.config.ts` must set `base: "/nonhlanhla_s_hairglam/"`. Runtime asset paths in JS/TS (logo, gallery images) must use `` `${import.meta.env.BASE_URL}filename` `` — Vite only rewrites paths in HTML at build time.
+
+```bash
+npx gh-pages -d dist
+```
+
+If deploying to a host that serves from root (Netlify, Vercel, Cloudflare Pages), change `base` back to `"/"` and remove the `import.meta.env.BASE_URL` prefixes.
+
 ## Documentation
 
 - [Developer Onboarding](docs/developer-onboarding.md)

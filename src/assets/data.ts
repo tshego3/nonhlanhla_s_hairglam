@@ -50,37 +50,37 @@ export const services: ReadonlyArray<Service> = [
 export const galleryImages: ReadonlyArray<GalleryImage> = [
   {
     id: 1,
-    src: "/gallery/previous_work_1.jpeg",
+    src: `${import.meta.env.BASE_URL}gallery/previous_work_1.jpeg`,
     alt: "Professional weave installation showcasing natural blending",
     span: "tall",
   },
   {
     id: 2,
-    src: "/gallery/previous_work_2.jpeg",
+    src: `${import.meta.env.BASE_URL}gallery/previous_work_2.jpeg`,
     alt: "Luxurious sew-in with seamless finish",
     span: "wide",
   },
   {
     id: 3,
-    src: "/gallery/previous_work_3.jpeg",
+    src: `${import.meta.env.BASE_URL}gallery/previous_work_3.jpeg`,
     alt: "Elegant frontal ponytail styling",
     span: "normal",
   },
   {
     id: 4,
-    src: "/gallery/previous_work_4.jpeg",
+    src: `${import.meta.env.BASE_URL}gallery/previous_work_4.jpeg`,
     alt: "Precision weave treatment with glossy finish",
     span: "wide",
   },
   {
     id: 5,
-    src: "/gallery/previous_work_5.jpeg",
+    src: `${import.meta.env.BASE_URL}gallery/previous_work_5.jpeg`,
     alt: "Sculpted frontal ponytail installation",
     span: "normal",
   },
   {
     id: 6,
-    src: "/gallery/previous_work_6.jpeg",
+    src: `${import.meta.env.BASE_URL}gallery/previous_work_6.jpeg`,
     alt: "Full sew-in weave with natural movement",
     span: "tall",
   },
