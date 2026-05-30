@@ -33,9 +33,9 @@ export function Services() {
                 <Box component="p" style={serviceStyles.description}>
                   {service.description}
                 </Box>
-                <Box component="span" style={serviceStyles.duration}>
+                {/* <Box component="span" style={serviceStyles.duration}>
                   {service.duration}
-                </Box>
+                </Box> */}
               </Box>
             </Box>
           ))}
